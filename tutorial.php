@@ -202,9 +202,10 @@
 
 <!-- resize tutorial popup ON -->
 <div class="resizeTutorialPopup">
-    <div class="resizeTutorialContent">
-        <div class="closePopupIcon" data-close-tutorial></div>
-        <img src="/resources/images/resizeImage.jpg" alt=""/>
+    <div class="generalWidth">
+        <div class="popupContainer">
+            <div class="closePopupIcon" data-close-tutorial></div>
+        </div>
     </div>
 </div>
 <!-- resize tutorial popup OFF -->

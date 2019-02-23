@@ -506,6 +506,7 @@ a{text-decoration: none;font-family: MontserratRegular}
 .headerFooter{margin-top: 15px;text-transform: uppercase;color:#fff;font-family: MontserratMedium;font-size: 14px;margin-bottom: 40px}
 .linksFooter{color:#bab2cc;font-size: 14px;text-transform: uppercase;font-family: MontserratLight;border-bottom: 1px solid #bab2cc;margin-bottom: 20px}
 .linksFooter:hover{color:#43ddc1;border-bottom: 1px solid #43ddc1}
+.linkFooterPolit{display: inline}
 .linkSocialFooter a{width:25px;height:20px;margin-right:5px}
 .linkSocialFooter a:nth-child(1){background: url("/resources/images/footerLink1.png")no-repeat}
 .linkSocialFooter a:nth-child(2){background: url("/resources/images/footerLink2.png")no-repeat}
@@ -515,6 +516,7 @@ a{text-decoration: none;font-family: MontserratRegular}
 .footerCopyright{color:#bab2cb;padding: 25px 0;font-family: OpenSansRegular;text-align: left;font-size: 16px}
 .logFooterBlock{display: none}
 .logBlockFooterContainer{width:190px;margin:0 auto}
+.footerContainer .beFriend{color:#c1bad2;font-size: 15px;font-family: OpenLight;margin-top: 25px}
 
 @media screen and (max-width: 1170px) {
     .footerContent .column:nth-child(1){width:21%}
@@ -2968,17 +2970,17 @@ body.pageUnScroll .chLT{animation: unChangeHeaderNavCoverHeight_p .5s;animation-
 
 
 /*  privacy policy */
-.pravicy_terms{font-size: 15px;margin: 70px 0;line-height: 1.5;padding:0 100px 0 100px}
+.pravicy_terms{font-size: 15px;margin: 70px 0;line-height: 1.5}
 .pravicy_terms .bold{font-weight: bold;text-align: center;font-size: 20px;margin-bottom: 30px}
 .pravicy_terms .padd{margin-bottom: 20px}
 .pravicy_terms .simplepPadd{margin-bottom: 10px}
 .pravicy_terms .subTitle{margin:30px 0;font-size: 18px}
 
 @media screen and (max-width: 850px) {
-    .pravicy_terms{margin: 45px 0;padding:0 50px 0 50px}
+    .pravicy_terms{margin: 45px 0}
 }
 @media screen and (max-width:600px) {
-    .pravicy_terms{font-size: 14px;padding:0 20px 0 20px}
+    .pravicy_terms{font-size: 14px}
     .pravicy_terms .bold{font-size: 18px}
     .pravicy_terms .subTitle{font-size: 16px}
 }
@@ -3213,21 +3215,172 @@ body.pageUnScroll .chLT{animation: unChangeHeaderNavCoverHeight_p .5s;animation-
 }
 /**/
 /* resize tutorial popup */
-.resizeTutorialPopup{display:none;position: fixed;top:0;left:0;overflow:auto;background: rgba(0,0,0,0.3);width:100%;height:100%;z-index: 1111;padding: 100px 0 100px 0}
-.resizeTutorialContent{position: relative;width:80%;max-width: 1171px;margin:0 auto}
-.resizeTutorialContent img{display: block;width: 100%;border-radius: 10px}
-.resizeTutorialPopup .closePopupIcon{position: absolute;top: -40px;right: -40px;background: url(/resources/images/closeIcon.png)no-repeat;cursor: pointer;z-index: 112;width: 40px;height: 40px;background-size: cover;display: block !important}
-@media screen and (max-width: 900px) {
-    .resizeTutorialPopup .popupContainer{width:90%}
-}
-@media screen and (max-width: 440px) {
-    .resizeTutorialPopup .closePopupIcon{right:0;top:-45px}
-    .resizeTutorialContent{position: relative;width:90%}
-}
+.resizeTutorialPopup{display:none;position: fixed;top:0;left:0;overflow:auto;background: rgba(0,0,0,0.3);width:100%;height:100%;z-index: 1111}
+.resizeTutorialPopup .popupContainer{width:766px;height:770px;margin: 150px auto 0 auto;background: url("../images/resizeImage.jpg")no-repeat;background-size:cover;box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);border-radius: 10px;padding: 70px;position: relative}
+.resizeTutorialPopup .closePopupIcon {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background: url(/resources/images/closeIcon.png)no-repeat;
+    cursor: pointer;
+    z-index: 112;
+    width: 40px;
+    height: 40px;
+    background-size: cover;}
 
 /**/
 
+/* partner */
+.headerPartnerContainer{background: url("/resources/images/comBg.jpg")no-repeat;padding: 100px 0 90px 0;text-align: center;width: 100%;background-size: cover}
+.headerPartnerContainer .title{font-size: 38px;color:#fff;font-family: MontserratSemiBold;}
+.headerPartnerContainer .title div{font-size: 38px;color:#fff;font-family: MontserratSemiBold;}
+.headerPartnerContainer .title span{color:#43ddc1;font-size: 38px;font-family: MontserratSemiBold;}
+.joinButton{width:260px;margin: 70px auto 0 auto;cursor: pointer}
 
+@media screen and (max-width: 800px) {
+    .headerPartnerContainer .title div,
+    .headerPartnerContainer .title,
+    .headerPartnerContainer .title span{font-size: 28px}
+    .joinButton{margin-top: 40px}
+    .headerPartnerContainer{padding: 40px 0 50px 0}
+}
+@media screen and (max-width: 500px) {
+    .headerPartnerContainer .title div,
+    .headerPartnerContainer .title,
+    .headerPartnerContainer .title span{font-size: 18px}
+    .joinButton{width:100%}
+}
+
+.partnerContentContainer{padding: 90px 0 60px 0}
+.partnerContentContainer .block{margin-bottom: 60px}
+.partnerContentContainer .block .title{margin-bottom: 35px;color: #6111d8;font-size: 28px;font-family: MontserratMedium}
+.partnerContentContainer .block .content{width:720px;padding-right: 25px}
+.partnerContentContainer .block .inputContainer{height:50px}
+.partnerContentContainer .block .inputContainer input{display: block;width:74%;float:left;padding: 12px 20px 11px 20px;border: 1px solid #e0e0e0;border-radius: 5px 0 0 5px;position: absolute;z-index: 1;font-size: 16px;color:#666666;font-family: OpenItalic}
+.partnerContentContainer .block .inputContainer .copyButton{display: block;width:30%;float:right;position: relative;z-index: 2}
+.mobButtonCopy{display: none;color:#0a0562;font-size: 12px;width:73px;margin:15px 0 0 0;position: relative;cursor: pointer;float:right}
+.mobButtonCopy:before{content: '';position:absolute;bottom:-2px;left:0;width:100%;height:1px;border-bottom:1px solid #0a0562;}
+.partnerContentContainer .block .content .text{font-size: 16px;color:#333333;font-family: OpenSansRegular;line-height: 1.5}
+.partnerContentContainer .block .content .text span{color:#6111d8;font-family: OpenSansSemibold}
+.partnerContentContainer .block .imageContent{width: 600px;height:330px;margin-right: 60px;float:right}
+.partnerContentContainer .block .imageContent img{background-size: cover}
+.aboutPartnerWidth{width:1160px;margin: 0 auto}
+.aboutPartnerContainer .forFuturePathers{margin-bottom: 0}
+.aboutPartnerContainer .headerText{padding: 120px 0 15px 0}
+
+@media screen and (max-width: 1100px) {
+    .partnerContentContainer .block .imageContent{float: none;margin:0 auto}
+}
+
+@media screen and (max-width: 1160px) {
+    .aboutPartnerWidth{width:100%}
+}
+
+@media screen and (max-width: 800px) {
+    .partnerContentContainer .block .title{font-size: 26px}
+    .partnerContentContainer .block .content{width: 100%;padding-right: 0}
+    .partnerContentContainer{padding: 60px 0 0 0}
+    .partnerContentContainer .block{margin-bottom: 50px}
+    .aboutPartnerContainer .headerText{padding: 90px 0 15px 0;font-size: 26px}
+}
+
+@media screen and (max-width: 750px) {
+    .searchPartner .title{font-family: MontserratMedium;font-size: 26px}
+    .aboutPartnerContainer .headerText{font-size: 26px;padding: 70px 0 20px 0}
+    .aboutPartnerContainer .forFuturePathers{margin-bottom: 0}
+}
+
+@media screen and (max-width: 700px) {
+    .partnerContentContainer .block .imageContent{width:100%;height:auto}
+    .partnerContentContainer .block .imageContent img{width:100%}
+    .bannerTitle{text-align: left !important;}
+    .partnerContentContainer .block .content .text{font-size: 15px}
+    .partnerContentContainer .block{margin-bottom: 35px}
+    .partnerContentContainer .block .title{margin-bottom: 25px}
+
+}
+@media screen and (max-width: 550px) {
+    .floatButtonPartner{float:right}
+}
+@media screen and (max-width: 500px) {
+    .partnerContentContainer .block .title{font-size: 16px;text-align: center}
+    .partnerContentContainer{padding: 40px 0 0 0}
+    .partnerContentContainer .block .inputContainer .copyButton{display: none}
+    .partnerContentContainer .block .inputContainer input{;width:100%;border-radius: 5px}
+    .mobButtonCopy{display: block;}
+    .statisticTitle{margin-top: 40px}
+    .searchPartner .title span{display: inline}
+    .searchPartner .title{font-family: MontserratMedium;font-size: 16px}
+    .aboutPartnerContainer .headerText{font-size: 16px}
+    .aboutPartnerContainer .forPathersText{font-size: 16px}
+    .aboutPartnerContainer .headerText{padding: 40px 0 20px 0}
+    .aboutPartnerContainer .forPathersText{margin-bottom: 20px}
+}
+@media screen and (max-width: 400px) {
+    .floatButtonPartner{width:170px}
+}
+/**/
+
+/* faq */
+.headerFaqContainer{background: url("/resources/images/comBg.jpg")no-repeat;background-size: cover;padding: 95px 0 90px 0}
+.headerFaqContainer .title{color:#fff;font-size: 36px;text-align: center;font-family: MontserratMedium}
+.faqContainer{width:1160px;margin: 0 auto;padding: 90px 0 30px 0}
+.faqContainer .title{font-size: 22px;color:#241b84;font-family: OpenSansSemibold;margin-bottom: 30px}
+.faqContainer .block{margin-bottom: 40px}
+.faqContainer .question{margin-bottom: 10px}
+.faqContainer .question span{font-size: 16px;color:#5f5f5f;font-family: OpenSansRegular;position: relative;padding-left: 25px;cursor: pointer}
+.faqContainer .question span:before{content: '';position: absolute;top:5px;left:0;background: url("../images/plusQuestion.png")no-repeat;width: 11px;height:11px;background-size: contain}
+.faqContainer .questionContainer{position: relative}
+.faqContainer .answer{display:none;position:relative;top:0;left:0;width:calc(100% - 14px);height:auto;border: 1px solid #f4f4f4;border-radius: 10px;padding: 15px 27px 12px 25px;color:#818181;font-size: 16px;font-family: OpenSansRegular;line-height: 1.5;margin: 14px 0 25px 14px}
+.faqContainer .answer .bullet{position: relative;padding-left: 25px;margin-bottom: 12px}
+.faqContainer .answer .bullet:before{content:'';position: absolute;top:7px;left:0;width:7px;height:7px;border-radius: 7px;background: #4536b7}
+
+@media screen and (max-width:1200px) {
+    .faqContainer{width:100%}
+}
+
+@media screen and (max-width:800px) {
+    .headerFaqContainer{padding: 60px 0}
+    .headerFaqContainer .title{font-size: 26px}
+    .faqContainer{padding: 70px 0 0 0}
+    .faqStartBuySell .startBuySellHeader{font-size: 26px;margin-bottom: 60px}
+    .faqStartBuySell .startBuySellHeader span{font-size: 26px}
+    .faqStartBuySell{padding: 90px 0}
+}
+
+@media screen and (max-width:720px) {
+    .faqStartBuySell .startBuySellHeader,
+    .faqStartBuySell .startBuySellHeader span{font-family: MontserratMedium;}
+
+}
+
+@media screen and (max-width:500px) {
+    .headerFaqContainer .title{font-size: 16px}
+    .faqContainer .title{font-size: 18px}
+    .faqContainer .question span,
+    .faqContainer .answer{font-size: 14px}
+    .faqContainer{padding: 40px 0 0 0}
+    .faqStartBuySell .startBuySellHeader,
+    .faqStartBuySell .startBuySellHeader span{font-size:20px}
+    .faqStartBuySell{padding: 60px 0}
+    .faqStartBuySell .startBuySellHeader{margin-bottom: 30px}
+}
+/*.opened{animation-duration: 3s;animation-name: slidein;animation-iteration-count:1;animation-direction:normal;animation-fill-mode:forwards;
+ .closed{animation-duration: 1s;animation-name: slidein;animation-iteration-count:1;animation-direction:reverse;animation-fill-mode:forwards;
+
+@keyframes slidein {
+    from {
+        height: 0;
+        opacity: 0;
+        margin-top: -20px;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+        margin-top: 14px;
+    }
+}*/
+/**/
 
 
 
