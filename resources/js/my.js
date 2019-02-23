@@ -43,6 +43,10 @@ $(document).ready(function () {
         copyToClipboardMsg($("#copyAddressOnPage")[0], "msg");
     });
 
+    $(document).on("click", "[data-copy-link-button]", function (e) {
+        copyToClipboardMsg($("#copyPartnerLink")[0], "msg");
+    });
+
     $(document).on("click", "[data-input-number-hand]", function (e) {
         var obj = $(this);
         var action = obj.attr("data-input-number-hand");
@@ -338,6 +342,43 @@ $(document).ready(function () {
             map: map,
         });
     }*/
+    
+    $(document).on("click", "[data-question-mark]", function () {
+
+
+
+            if (!$(this).parents(".questionContainer").find(".answer").hasClass("checked")) {
+                $(this).parents(".questionContainer").find(".answer").fadeIn(200);/*animate(
+                    {
+                        height: "show",
+                        opacity: "show"
+                    }, {
+                        duration: 400,
+                        specialEasing: {
+                            opacity: 'linear',
+                            height: 'linear'
+                        }
+                    });*/
+                $(this).parents(".questionContainer").find(".answer").addClass("checked");
+            }
+
+            else {
+                console.log("has");
+                $(this).parents(".questionContainer").find(".answer").removeClass("checked")
+                $(this).parents(".questionContainer").find(".answer").fadeOut(200);/*animate(
+                    {
+                        height: "hide",
+                        opacity: "hide"
+                    }, {
+                        duration: 400,
+                        specialEasing: {
+                            opacity: 'linear',
+                            height: 'linear'
+                        }
+                    });*/
+            }
+
+    });
 });
 
 function pageScroll() {

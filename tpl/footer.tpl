@@ -29,7 +29,9 @@
                         <a href="" class="linksFooter">Руководство</a>
                         <div></div>
                         <a href="/term.php" class="linksFooter">УСЛОВИЯ И ПОЛОЖЕНИЯ</a>
-                        <a href="/polit.php" class="linksFooter">Политика конфиденциальности</a>
+                        <div>
+                            <a href="/polit.php" class="linksFooter linkFooterPolit">Политика конфиденциальности</a>
+                        </div>
                     </div>
                 </div>
                 <div class="columnMobFooter clearAfter">
@@ -60,6 +62,11 @@
                             <a href=""></a>
                             <a href=""></a>
                             <a href=""></a>
+                        </div>
+                        <div class="beFriend">
+                            Ты нам нравишься.
+                            <div></div>
+                            Давай дружить.
                         </div>
                     </div>
                 </div>
