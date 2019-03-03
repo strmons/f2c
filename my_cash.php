@@ -105,7 +105,7 @@
 
                             </div>
 
-                            <div class="sendCurrencyContainer">
+                            <div class="sendCurrencyContainer fromAddress">
                                 <div class="titleField">
                                     С адреса
                                 </div>
