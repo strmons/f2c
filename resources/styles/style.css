@@ -1178,10 +1178,11 @@ a{text-decoration: none;font-family: MontserratRegular}
     .getOrderPopup[data-popup-full-screen=true]{position: static !important;height:auto !important;overflow: visible !important;}
 }
 @media screen and (max-width: 750px) {
-    .buttonActionSendCashContainer{top:240px;height:50px;left:0}
-    .actionCurrency .title{margin-top: 80px}
+    .buttonActionSendCashContainer{bottom:220px;height:50px;left:0}
+    .actionCurrency .title{margin-top: 0}
     .sendCurrencyContainer:nth-child(2){margin-top: 30px}
     .sendCurrencyContainer{float:none}
+    .fromAddress{padding-top: 90px !important;}
 }
 
 @media screen and (max-width: 600px) {
@@ -1190,8 +1191,8 @@ a{text-decoration: none;font-family: MontserratRegular}
     .yourBalance span{font-size: 25px}
     .yourBalance{font-size: 18px}
     .codContainer{margin: 0}
-    .buttonActionSendCashContainer{top:300px}
-    .actionCurrency .title{margin-top: 50px}
+    /*.buttonActionSendCashContainer{top:300px}
+    .actionCurrency .title{margin-top: 50px}*/
     .mobileSelectAddress{border:1px solid #6111d8}
 }
 
